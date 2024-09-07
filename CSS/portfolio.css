@@ -1,0 +1,502 @@
+/*start global rules*/
+/*google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* end global rules*/
+/*start header*/
+
+header {
+    background-color: #eeeeee;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+
+
+}
+
+header .logo {
+    width: 20%;
+
+}
+
+header .nav a {
+    text-decoration: none;
+    color: #ff2a63;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 20px;
+    width: max-content;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    background-color: #ff2a63;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+
+}
+
+.nav a:hover::after {
+    transform: scaleX(1);
+
+}
+
+/*end header*/
+/* start section 1*/
+.section1 {
+    padding: 100px 100px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(../photo/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 740px;
+    background-position: right;
+
+
+
+
+
+
+
+}
+
+.section1 h3 {
+    color: #ff2a63;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 7px 4px;
+    margin: 10px 0;
+}
+
+.section1 h5 {
+    font-size: 15px;
+    font-weight: 300;
+    color: black;
+
+    padding: 7px 4px;
+    margin: 10px 0;
+
+
+}
+
+.social-media a {
+
+
+    color: #ff2a63;
+    font-size: 30px;
+    padding-right: 50px;
+
+
+}
+
+/* end section 1*/
+/*Start portfolio*/
+.portfolio .container .special-heading {
+    color: #ebeced;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -3;
+    margin: 0%;
+}
+
+.special-heading+p {
+    margin: -30px 0 0;
+    font-size: 30px;
+    text-align: center;
+    color: #ff2a63;
+    font-weight: bolder;
+}
+
+.portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #ffff;
+    display: grid;
+}
+
+.portfolio .portfolio-content {
+
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        'c1 c1 '
+        'c2 c2'
+        'c3 c3'
+    ;
+    padding: 60px;
+    margin: 60px;
+
+    justify-items: center;
+
+
+}
+
+.portfolio .portfolio-content .card .info {
+    padding: 20px;
+
+}
+
+.portfolio-content .card {
+    width: 60%;
+    background-color: #f6f6f6;
+    box-shadow: inset 4px 4px 5px rgba(255, 255, 255, 0.3),
+        inset -4px -4px 5px rgba(0, 0, 0, 0.1),
+        10px 40px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: 0.3s;
+
+
+
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.portfolio-content .card img {
+    width: 100%;
+}
+
+.portfolio-content:first-child {
+    grid-area: c1;
+}
+
+.portfolio-content:nth-child(2) {
+    grid-area: c2;
+}
+
+.portfolio-content:last-child {
+    grid-area: c3;
+}
+
+.portfolio-content .card h3 {
+    color: #ff2a63;
+    text-align: center;
+    line-height: 20px;
+    font-size: medium;
+}
+
+.portfolio-content .card p {
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 0;
+
+}
+
+.card img {
+    opacity: 0.8;
+}
+
+.card:hover img {
+    opacity: 1;
+}
+
+/*End portfolio*/
+/*start objective*/
+.ob-container h3 {
+    color: #ff2a63;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    border-bottom: 2px solid #ff2a63;
+    width: 50%;
+    margin-left: 25%;
+   
+
+
+}
+
+.ob-container p {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.ob-container {
+    width: 60%;
+    height: 600px;
+    margin-left: 20%;
+    background-color: #f6f6f6;
+    transition: 0.3s;
+    box-shadow: inset 4px 4px 5px rgba(255, 255, 255, 0.3),
+        inset -4px -4px 5px rgba(0, 0, 0, 0.1),
+        10px 40px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 100px;
+        margin-bottom: 100px;
+
+}
+
+/*end objective*/
+/*start Education*/
+.ED-container {
+    margin-bottom: 100px;
+    width: 60%;
+    height: 600px;
+    margin-left: 20%;
+    background-color: #f6f6f6;
+    transition: 0.3s;
+    box-shadow: inset 4px 4px 5px rgba(255, 255, 255, 0.3),
+        inset -4px -4px 5px rgba(0, 0, 0, 0.1),
+        10px 40px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+.ED-container h3 {
+    
+    color: #ff2a63;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    border-bottom: 2px solid #ff2a63;
+    width: 50%;
+    margin-left: 25%;
+
+
+}
+
+.ED-container span {
+    font-weight: 600;
+
+}
+
+.ED-container p {
+    margin-top: 20px;
+    font-size: 20px;
+
+    padding-left: 30px;
+}
+
+/*end  Education*/
+/*start contact*/
+.ex-container h3 {
+    color: #ff2a63;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    border-bottom: 2px solid #ff2a63;
+    width: 50%;
+    margin-left: 25%;
+
+
+}
+
+.ex-container p {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.ex-container {
+    width: 60%;
+    height: 600px;
+    margin-left: 20%;
+    background-color: #f6f6f6;
+    transition: 0.3s;
+    box-shadow: inset 4px 4px 5px rgba(255, 255, 255, 0.3),
+        inset -4px -4px 5px rgba(0, 0, 0, 0.1),
+        10px 40px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+.ex-container .prog {
+    color: #ff2a63;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    border-bottom: 2px solid #ff2a63;
+    width: 40%;
+    margin-left: 30%;
+    margin-bottom: 30px;
+    margin-top: 40px;
+
+
+}
+
+/* end experience*/
+.contact {
+    margin-top: 50px;
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f6f6f6;
+  
+}
+.contact .first{
+    max-width: 800px;
+    text-align: center;
+
+}
+.contact .first h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #ff2a63;
+}
+.contact .first p {
+    
+    font-weight: 300;
+    color: #ff2a63;
+}
+.C-container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.C-container .C-info{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+}
+.C-container .C-info .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.C-container .C-info .box .C-icon{
+    min-width: 60px;
+    height: 60px;
+    background-color: #ff2a63;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+
+}
+.C-container .C-info .box .C-text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+}
+.C-form{
+    position: absolute;
+        width: 30%;
+    padding: 40px;
+    background-color:white;
+       
+        box-shadow: inset 4px 4px 5px rgba(255, 255, 255, 0.3),
+            inset -4px -4px 5px rgba(0, 0, 0, 0.1),
+            10px 40px 40px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin-left: 30%;
+    
+}
+.C-form h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+.C-form .input{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+
+}
+.C-form .input input{ 
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #ff2a63;
+    outline: none;
+}
+.C-form .input textarea
+{
+        width: 100%;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        border: none;
+        border-bottom: 2px solid #ff2a63;
+        resize: none;
+}
+.C-form .input span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        pointer-events: none;
+        transition: 0.5s;
+        color:#777;
+}
+.C-form .input input:focus ~ span{
+    color: black;
+    font-size: 12px;
+    transform: translateY(-20px);
+
+}
+.C-form .input textarea:focus~span {
+    color: black;
+    font-size: 12px;
+    transform: translateY(-20px);
+
+}
+.C-form .input input[type="submit"]{
+    width: 100px;
+    background-color: #ff2a63;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+
+}
+@media(max-width: 991px){
+    .contact{
+        padding:50px;
+    }
+    .C-container{
+        flex-direction: column;
+    }
+    .C-container .C-info{
+        margin-bottom: 40px;
+
+    }
+        .C-container .C-info,.C-form{
+            width:100%;
+    
+        }
+}
+/* end contact*/
